@@ -246,3 +246,20 @@ footer{
 		}
 	}
 }
+@for $i from 1 through $countofRes {
+	@if $i == 1 {
+		.res-#{$i}::before {
+		    content:"#{$i}. ";
+  		}
+  	}
+  	@else if $i == 3{
+  		.res-#{$i}::before {
+		    content:"#{$i}. ";
+  		}
+  	}
+  	@else{
+  		.res-#{$i}::before {
+	    	content:"#{$i}.";
+	    }
+  	}
+}

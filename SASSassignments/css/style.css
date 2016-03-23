@@ -203,4 +203,19 @@ footer {
       margin: 0px auto;
       line-height: 26px; }
 
+.res-1::before {
+  content: "1. "; }
+
+.res-2::before {
+  content: "2."; }
+
+.res-3::before {
+  content: "3. "; }
+
+.res-4::before {
+  content: "4."; }
+
+.res-5::before {
+  content: "5."; }
+
 /*# sourceMappingURL=style.css.map */
