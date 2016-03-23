@@ -42,21 +42,21 @@ img {
 }
 nav {
   clear: both;
-  height: 80px;
   width: 100%;
-  background: linear-gradient(white, white, white, #d3d3d3);
 }
 nav ul li {
+  height: 80px;
   float: left;
   padding: 3%;
   box-sizing: border-box;
   font-size: 22px;
   font-weight: bold;
   color: #939393;
+  background: linear-gradient(white, white, white, #d3d3d3);
 }
 nav ul li:hover,
 nav ul li.active {
-  color: red;
+  color: #E05652;
 }
 section.middle {
   clear: both;
@@ -65,9 +65,9 @@ section.middle {
 }
 .articleHead {
   font-size: 28px;
-  color: red;
+  color: #E05652;
   margin: 15px 0px;
-  font-weight: normal;
+  font-weight: bold;
 }
 article.main {
   padding: 0px 40px;
@@ -78,13 +78,14 @@ article.main {
 }
 article.main p {
   line-height: 24px;
-  color: #58595b;
+  color: #939393;
   font-size: 18px;
 }
 article.main .author {
   color: green;
 }
 aside {
+  margin-top:10px;
   width: 25%;
   float: left;
   height: 100%;
