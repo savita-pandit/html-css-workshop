@@ -1,0 +1,12 @@
+@mixin border-radius-mix($radius){
+	border-radius:$radius;
+}
+@mixin back-gradiant($color1,$color2,$color3,$color4){
+	background: linear-gradient($color1,$color2,$color3,$color4);
+}
+@mixin txtFont{
+	@if $headingFont == 28px {font-size:21px}
+	@else{
+		font-size:24px
+	}
+}
