@@ -81,7 +81,7 @@ article.main p {
   color: #58595b;
   font-size: 18px;
 }
-article.main .author {
+article.main p.author {
   color: green;
 }
 aside {
