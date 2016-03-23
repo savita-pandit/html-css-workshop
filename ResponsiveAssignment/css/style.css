@@ -31,7 +31,7 @@ header section.bannerSec {
   float: left;
 }
 header section.rightHead {
-  width: 300px;
+  width: 230px;
   height: 80px;
   right: 0px;
   float: right;
@@ -44,7 +44,6 @@ nav {
   clear: both;
   height: 80px;
   width: 100%;
-  background: linear-gradient(white, white, white, #d3d3d3);
 }
 nav ul li {
   float: left;
@@ -53,6 +52,7 @@ nav ul li {
   font-size: 22px;
   font-weight: bold;
   color: #939393;
+  background: linear-gradient(white, white, white, #d3d3d3);
 }
 nav ul li:hover,
 nav ul li.active {
@@ -61,7 +61,7 @@ nav ul li.active {
 section.middle {
   clear: both;
   width: 100%;
-  overflow: auto;
+  overflow-y: auto;
 }
 .articleHead {
   font-size: 28px;
@@ -85,6 +85,7 @@ article.main .author {
   color: green;
 }
 aside {
+  margin-top:10px;
   width: 25%;
   float: left;
   height: 100%;
@@ -123,7 +124,9 @@ aside button {
   color: red;
 }
 section.imgsSec {
-  overflow: auto;
+  overflow-y: auto;
+   overflow-x:hidden;
+  width:100%;
 }
 section.imgsSec section.imgs {
   width: 350px;
@@ -236,4 +239,97 @@ footer section.copyRt p {
   width: 400px;
   margin: 0px auto;
   line-height: 26px;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px){
+  body {
+    margin: 5px auto;
+    width: 99%;
+  }
+  header section.logoSec {
+    padding: 0px;
+  }
+  header section.logoSec , header section.bannerSec {
+    width: 100%;
+  }
+  header section.rightHead{
+    display:none;
+  }
+  .articleHead {
+    color:green;
+  }
+  aside,article.main{
+    width:100%;
+    overflow-y:hidden;
+  }
+  aside{
+    text-align: center;
+  }
+  article.main{
+    padding: 0px 10px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+  nav ul li{
+    padding: 20px 10px;
+    width:33%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  section.imgsSec{
+    width:100%;
+    overflow-x: 
+  } 
+  section.imgsSec section.imgs {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  section.imgsSec section.imgs:last-child {
+    margin: 10px 0px; 
+  }
+  footer{
+    width:100%;
+  }
+  footer section.footerLinkSec {
+    width: 100%;
+    margin: 10px 0px;
+    padding:10px;
+    box-sizing: border-box;
+    overflow:hidden;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align:center;
+  }
+  footer section.footerLinkSec :last-child table {
+    margin: 0px auto;
+  }
+  footer section.footerLinkSec input[type=Submit] {
+    float: left;
+  }
+  footer section.footerLinkSec input[type=text] {
+    margin-left: 10px;
+    padding: 12px 5px;
+    border-radius: 18px;
+    width: 200px;
+  }
+  footer section.copyRt{
+    font-size:14px;
+  }
+  footer section.copyRt ul {
+    width: 240px;
+  }
+  footer section.copyRt p{
+    width:280px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 900px){
+  aside{
+    width:30%;
+    text-align: center;
+  }
+  article.main{
+    width:67%;
+  }
 }
