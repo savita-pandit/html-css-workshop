@@ -178,6 +178,7 @@ footer section.footerLinkSec :last-child table tr td {
   padding-bottom: 2px;
 }
 footer section.footerLinkSec ul li {
+  width:100%;
   list-style-type: none;
 }
 footer section.footerLinkSec input[type=Submit] {
@@ -416,5 +417,21 @@ footer section.copyRt p {
   }
 }
 @media only screen and (min-width: 900px){
-
+  footer section.footerLinkSec {
+    width: 24%;
+    margin:1%;
+  }
+  footer section.last{
+    width:33%;
+  }
+  footer section.last table{
+    width:100%;
+  }
+  footer section.footerLinkSec ul {
+    width:100%;
+  }
+ 
+  footer section.footerLinkSec input[type=text] {
+    width:100%;
+  }
 }
